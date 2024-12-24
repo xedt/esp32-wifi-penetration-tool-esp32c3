@@ -7,7 +7,8 @@
  * @brief Implements HCCAPX serializer
  */
 #include "hccapx_serializer.h"
-
+#include <netinet/in.h>
+#include <arpa/inet.h>
 #include <stdint.h>
 #include <string.h>
 #define LOG_LOCAL_LEVEL ESP_LOG_DEBUG
@@ -82,7 +83,7 @@ hccapx_t *hccapx_serializer_get(){
     if(hccapx.message_pair == 255){
         return NULL;
     }
-    
+
     return &hccapx;
 }
 
