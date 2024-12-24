@@ -43,6 +43,12 @@ Project can be built in the usual ESP-IDF way:
 ```shell
 idf.py build
 ```
+to set up build enviroment with docker container
+```shell
+docker run --rm -v $PWD:/home/blabla/hack/esp32/ -w /home/blabla/hack/esp32/ -u $UID -e HOME=/tmp -it  --device=/dev/ttyACM0  espressif/idf 
+```
+
+
 
 Legacy method using `make` is not supported by this project.
 
