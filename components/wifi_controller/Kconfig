@@ -32,11 +32,10 @@ menu "Wi-Fi Controller"
             help
             Password for management AP
 
-        config MGMT_AP_AUTH_ON
-            bool "Password protected management AP"
-            default y
+        config MGMT_AP_AUTH_OFF
+            bool "No protected open management AP"
+            default n
             help
-                If set to true, WPA2-PSK will be used. Otherwise authentication will be open
-                and anyone can connect to this management AP.
+                If set to true, authmode WPA2-PSK will NOT be used.
     endmenu
 endmenu
