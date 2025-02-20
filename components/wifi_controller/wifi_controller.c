@@ -76,7 +76,7 @@ void wifictl_mgmt_ap_start(){
             .ssid_len = strlen(CONFIG_MGMT_AP_SSID),
             .password = CONFIG_MGMT_AP_PASSWORD,
             .max_connection = CONFIG_MGMT_AP_MAX_CONNECTIONS,
-            .authmode = WIFI_AUTH_WPA2_PSK
+            .authmode = CONFIG_MGMT_AP_AUTH_OFF ? WIFI_AUTH_OPEN : WIFI_AUTH_WPA2_PSK
         },
     };
     wifictl_ap_start(&mgmt_wifi_config);
