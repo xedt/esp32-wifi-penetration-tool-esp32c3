@@ -36,7 +36,7 @@ By default:
     ![Web client UI](doc/images/ui-config.png)
 
 ## Build
-This project is currently developed using ESP-IDF 4.1 (commit `5ef1b390026270503634ac3ec9f1ec2e364e23b2`). It may be broken on newer version.
+This project is currently developed using ESP-IDF 4.4.7 (commit `38eeba213aa695aabfd6d89aa9f5078dbe5a94c3`). It will be broken on newer v5.x.
 
 Project can be built in the usual ESP-IDF way:
 
@@ -85,8 +85,7 @@ This project consists of multiple components, that can be reused in other projec
 * [Academic paper about this project (PDF)](https://excel.fit.vutbr.cz/submissions/2021/048/48.pdf)
 
 ## Hardware 
-This project was mostly build and tested on **ESP32-DEVKITC-32E**
-but there should not be any differences for any **ESP32-WROOM-32** modules.
+This project was mostly build and tested on **ESP32-DEVKITC-32E** **ESP32-C3**
 
 <p align="center">
     <img src="doc/images/soucastky_8b.png" alt="Hw components" width="400">
