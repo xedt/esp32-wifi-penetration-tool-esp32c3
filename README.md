@@ -37,6 +37,7 @@ By default:
 
 ## Build
 This project is currently developed using ESP-IDF 4.4.7 (commit `38eeba213aa695aabfd6d89aa9f5078dbe5a94c3`). It will be broken on newer v5.x.
+Can build on ESP-IDF 4.4.8 and ESP-IDF 5.4
 
 Project can be built in the usual ESP-IDF way:
 
