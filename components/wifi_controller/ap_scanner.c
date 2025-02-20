@@ -29,6 +29,7 @@ void wifictl_scan_nearby_aps(){
         .ssid = NULL,
         .bssid = NULL,
         .channel = 0,
+        .show_hidden = 1,
         .scan_type = WIFI_SCAN_TYPE_ACTIVE
     };
     
