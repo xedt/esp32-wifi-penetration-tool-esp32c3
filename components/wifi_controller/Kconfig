@@ -34,7 +34,7 @@ menu "Wi-Fi Controller"
 
         config MGMT_AP_AUTH_OFF
             bool "No protected open management AP"
-            default n
+            default y
             help
                 If set to true, authmode WPA2-PSK will NOT be used.
     endmenu
